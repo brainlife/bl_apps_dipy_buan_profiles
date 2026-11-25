@@ -10,9 +10,9 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
 </p>
 
-> 📍 **This branch, `1.1.1`, is the brainlife.io App BUAN Compute Bundles Profiles ** ([doi:10.25663/brainlife.app.456](https://doi.org/10.25663/brainlife.app.456)).
+> **This branch, `1.1.1`, is the brainlife.io App BUAN Compute Bundles Profiles ** ([doi:10.25663/brainlife.app.456](https://doi.org/10.25663/brainlife.app.456)).
 
-## 🧠 At a glance
+## At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
@@ -22,13 +22,13 @@ Wraps dipy_buan_profiles (Bundle Analytics, Chandio et al. 2020) with --no_disks
 
 | | |
 |---|---|
-| 🐳 **Container** | `brainlife/dipy:1.1.1` |
-| ⚙️ **Resources** | 8 CPUs · 16 GB memory |
-| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.456](https://doi.org/10.25663/brainlife.app.456) |
+| **Container** | `brainlife/dipy:1.1.1` |
+| **Resources** | 8 CPUs · 16 GB memory |
+| **Run it** | [doi.org/10.25663/brainlife.app.456](https://doi.org/10.25663/brainlife.app.456) |
 
 <!-- brainlife-app:end -->
 
-## 🔬 How it works
+## How it works
 
 This is a brainlife.io wrapper for the DIPY [`dipy_buan_profiles`](https://dipy.org/documentation/1.2.0./interfaces/buan_flow/) workflow. It creates bundle profiles of white matter pathways and saves them in HDF5 files, implementing the bundle profile method of Bundle Analytics (BUAN), a computational framework for investigating the shapes and profiles of brain pathways across populations (Chandio et al., 2020).
 
@@ -39,13 +39,13 @@ The App runs `dipy_buan_profiles` from the `brainlife/dipy:1.1.1` container on a
 
 This repository holds DIPY workflow wrappers on separate branches: the registered BUAN App is built from the [`1.1.1`](https://github.com/brainlife/bl_apps_dipy_buan_profiles/tree/1.1.1) branch, while the default branch contains a wrapper for the `dipy_mask` workflow (`dipy_mask:dwi` on a DWI, or `dipy_mask:tensor` on an FA map). See the [DIPY Apps registered on brainlife.io](https://brainlife.io/apps#dipy).
 
-## 🚀 Running the App
+## Running the App
 
-### ☁️ On brainlife.io
+### On brainlife.io
 
 Open the App at [doi.org/10.25663/brainlife.app.456](https://doi.org/10.25663/brainlife.app.456), choose the datasets to run on and press **Execute**. The App's brainlife.io record does not yet define inputs, outputs or parameters, while `main` expects `model_bundle_folder`, `subject_folder` and `no_disks` in `config.json`.
 
-### 💻 Locally
+### Locally
 
 You need [Singularity/Apptainer](https://apptainer.org/) and [`jq`](https://jqlang.github.io/jq/).
 
@@ -74,11 +74,11 @@ singularity exec -e docker://brainlife/dipy:1.1.1 dipy_buan_profiles [your_args]
 
 See the [`dipy_buan_profiles` reference](https://dipy.org/documentation/1.2.0./reference_cmd/dipy_buan_profiles/) for all arguments.
 
-## 📦 Outputs
+## Outputs
 
 `output/` holds the bundle profiles as HDF5 files, named as described in the [`dipy_buan_profiles` reference](https://dipy.org/documentation/1.2.0./reference_cmd/dipy_buan_profiles/).
 
-## 📚 Citing
+## Citing
 
 > [!TIP]
 > If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
@@ -90,11 +90,11 @@ See the [`dipy_buan_profiles` reference](https://dipy.org/documentation/1.2.0./r
 - Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
 - Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. *Scientific Data* 6:69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
-## 👥 Authors
+## Authors
 
 - [Bramsh Chandio](https://github.com/BramshQamar)
 
-## 💰 Funding
+## Funding
 
 [![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
 [![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
@@ -115,6 +115,6 @@ See the [`dipy_buan_profiles` reference](https://dipy.org/documentation/1.2.0./r
 
 DIPY is publicly funded. Please also acknowledge its funding in publications and code that reuse this code: NIH NIBIB R01EB027585, NIH NIMH RF1MH121868, NIH NIMH R01MH108467, NSF BCS-1734853, NSF EEC-1720625, NSF OAC-1916518, NSF IIS-1912270 and NSF IIS-1636893.
 
-## ⚖️ License
+## License
 
 [BSD 3-Clause](LICENSE), Copyright (c) 2020, DIPY. DIPY itself is licensed under the terms of the BSD license; see its [LICENSE file](https://github.com/dipy/dipy/blob/master/LICENSE).
